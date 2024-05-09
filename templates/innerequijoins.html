@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr>
+                <th>emp_no</th>
+                <th>ename</th>
+                <th>job</th>
+                <th>dept_no</th>
+                <th>mgr</th>
+                <th>sal</th>
+                <th>hire_date</th>
+                <th>comm</th>
+                <th>dname</th>
+                <th>location</th>
+            </tr>
+            {% for EO in JDED %}
+            <tr>
+                <td>{{EO.emp_no}}</td>
+                <td>{{EO.ename}}</td>
+                <td>{{EO.job}}</td>
+                <td>{{EO.dept_no}}</td>
+                <td>{{EO.mgr}}</td>
+                <td>{{EO.sal}}</td>
+                <td>{{EO.hire_date}}</td>
+                <td>{{EO.comm}}</td>
+                <td>{{EO.dept_no.dname}}</td>
+                <td>{{EO.dept_no.location}}</td>
+
+            {% endfor %}
+    
+    
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

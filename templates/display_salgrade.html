@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+        <tr>
+            <th>grade</th>
+            <th>losal</th>
+            <th>hisal</th>
+        </tr>
+        {% for SO in QLSO %}
+        <tr>
+            <td>{{SO.grade}}</td>
+            <td>{{SO.losal}}</td>
+            <td>{{SO.hisal}}</td>
+        {% endfor %}
+
+        </tr>
+    </table>
+    </center>
+</body>
+</html>

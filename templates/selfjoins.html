@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr>
+                <th>emp name</th>
+                <th>emp number</th>
+                <th>emp sal</th>
+                <th>deptno</th>
+                <th>comm</th>
+                <th>job</th>
+                <th>manager name</th>
+                <th>manager number</th>
+                <th>manager sal</th>
+                <th>manager comm</th>
+                <th>manager deptno</th>
+                <th>manager job</th>
+            </tr>
+            {% for EO in EMJD %}
+            <tr>
+                <td>{{EO.ename}}</td>
+                <td>{{EO.emp_no}}</td>
+                <td>{{EO.sal}}</td>
+                <td>{{EO.dept_no}}</td>
+                <td>{{EO.comm}}</td>
+                <td>{{EO.job}}</td>
+                <td>{{EO.mgr.ename}}</td>
+                <td>{{EO.mgr.emp_no}}</td>
+                <td>{{EO.mgr.sal}}</td>
+                <td>{{EO.mgr.comm}}</td>
+                <td>{{EO.mgr.dept_no}}</td>
+                <td>{{EO.mgr.job}}</td>
+
+            {% endfor %}
+    
+    
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr>
+                <th>ENAME</th>
+                <th>comm</th>
+                <th>DNAME</th>
+                <th>MANAGER NAME</th>
+            </tr>
+            {% for emo in EMDJD %}
+            <tr>
+                <td>{{emo.ename}}</td>
+                <td>{{emo.comm}}</td>
+                <td>{{emo.dept_no.dname}}</td>
+                <td>{{emo.mgr.ename}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>
